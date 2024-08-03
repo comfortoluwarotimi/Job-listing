@@ -1,0 +1,110 @@
+@media all and (min-width: 1440px) {
+
+    main {
+        width: 100%;
+    }
+
+    main .topbar {
+        width: 100%;
+        margin-bottom: 4.5em;
+    }
+
+    main .topbar .topbar-background {
+        height: 10.4em;
+        width: 100%;
+    }
+
+
+    main .filter-bar {
+        width: 74em;
+        padding-inline: 3em;
+        margin-top: -6.8em;
+    }
+
+    main .all-sections .section {
+        display: flex;
+        flex-direction: row;
+        width: 74em;
+        height: 10.1em;
+        margin-bottom: 1em;
+        justify-content: space-between;
+    }
+
+    main .all-sections .section .flex-row-column {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8.5em;
+        justify-content: center;
+    }
+
+    main .all-sections .section .logo {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5.8em;
+        left: 2.3em;
+    }
+
+
+    main .all-sections .section .line-one {
+        margin-top: .6em;
+    }
+
+    main .all-sections .section .line-one .new {
+        margin-right: .6em;
+    }
+
+
+    main .all-sections .section .line-one .company {
+        font-size: 1.25rem;
+        margin-right: .85em;
+    }
+
+    main .all-sections .section .position {
+        font-size: 1.47rem;
+        margin-bottom: .4em;
+    }
+
+    main .all-sections .section .border {
+        display: none;
+    }
+
+    main .all-sections .section .line-two {
+        font-size: 1.2rem;
+        gap: 2.2em;
+        margin-bottom: 1.5em;
+        width: 16em;
+    }
+
+    main .all-sections .section .line-two .contract::before,
+    main .all-sections .section .line-two .contract::after {
+        margin-top: .4em;
+    }
+
+    main .all-sections .section .line-two .contract::before {
+        margin-left: -1.19em;
+    }
+
+
+    main .all-sections .section .line-two .contract::after {
+        margin-left: .99em;
+    }
+
+    main .all-sections .section .box {
+        margin-right: .7em;
+        margin-top: .7em;
+        gap: 1.1em;
+    }
+
+    main .all-sections .section .box>* {
+        font-size: 1.1rem;
+        height: 1.9em;
+        padding: .5em;
+    }
+
+    main .topbar .filter-bar .clear {
+        position: absolute;
+        display: none;
+        right: 2.5em;
+        font-size: .89rem;
+    }
+}

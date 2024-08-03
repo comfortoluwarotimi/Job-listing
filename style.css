@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+
+:root {
+    /* ### Primary */
+
+    --desaturated-dark-cyan: hsl(180, 29%, 50%);
+
+    /* ### Neutral  */
+
+    --light-grayish-cyan-background: hsl(180, 52%, 96%);
+    --light-grayish-cyan-filter-tablets: hsl(180, 31%, 95%);
+    --dark-grayish-cyan: hsl(180, 8%, 52%);
+    --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+}
+
+*,
+*::after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--light-grayish-cyan-background);
+
+}
+
+main .topbar {
+    background-color: var(--desaturated-dark-cyan);
+    height: 10.4em;
+    margin-bottom: 3.4em;
+}
+
+main .topbar .topbar-background {
+    object-fit: cover;
+    object-position: center;
+}
+
+main .filter-bar {
+    position: relative;
+    display: none;
+    flex-wrap: wrap;
+    margin-top: -5.6em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2.5em;
+    gap: 1em 2.6em;
+    width: 22em;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1.3em 1.5em;
+}
+
+main .filter-bar .filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--desaturated-dark-cyan);
+    background-color: var(--light-grayish-cyan-background);
+    font-weight: 700;
+    padding: .5em .7em .3em .5em;
+    height: 2em;
+    border-radius: 4px;
+    transition: all .2s;
+}
+
+main .filter-bar .filter-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--desaturated-dark-cyan);
+    background-color: var(--light-grayish-cyan-background);
+    padding: .6em 1.4em .5em .5em;
+    height: 2.05em;
+    border-radius: 4px;
+    transition: all .2s;
+}
+
+
+main .filter-bar .filter-button .remove-icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: -1.6em;
+    top: 0;
+    background-color: var(--desaturated-dark-cyan);
+    padding: .565em;
+    border-radius: 0 4px 4px 0;
+    transition: all .2s;
+}
+
+main .filter-bar .filter-button .remove-icon:hover {
+    background-color: black;
+}
+
+main .filter-bar .clear {
+    position: absolute;
+    display: none;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: center;
+    border: none;
+    background-color: white;
+    font-size: .86rem;
+    font-weight: 700;
+    color: var(--very-dark-grayish-cyan);
+    width: 4em;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+main .filter-bar .clear:hover {
+    color: var(--desaturated-dark-cyan);
+}
+
+main .filter-bar .clear::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--desaturated-dark-cyan);
+    transition: all 0.3s ease-in-out;
+}
+
+main .filter-bar .clear:hover::before {
+    width: 70%;
+    left: .2em;
+}
+
+
+main .all-sections .section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: .1em;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    width: 21.35em;
+    border-radius: 5px;
+    padding: 2.5em 1.25em 1.3em;
+    border-left: .39em solid var(--desaturated-dark-cyan);
+    margin-bottom: 2.7em;
+}
+
+main .all-sections .section .logo {
+    position: absolute;
+    width: 3.2em;
+    top: -1.6em;
+    left: 1.25em;
+}
+
+main .all-sections .section .line-one {
+    display: flex;
+    align-items: center;
+    margin-bottom: .8em;
+}
+
+main .all-sections .section .line-one .company {
+    color: var(--desaturated-dark-cyan);
+    font-size: 1.04rem;
+    margin-right: 1.4em;
+}
+
+main .all-sections .section .line-one .new {
+    font-size: .95rem;
+    background-color: var(--desaturated-dark-cyan);
+    color: var(--light-grayish-cyan-filter-tablets);
+    padding: .4em .6em .19em;
+    border-radius: 15px;
+    margin-right: .8em;
+
+}
+
+main .all-sections .section .line-one .featured {
+    font-size: .95rem;
+    background-color: var(--very-dark-grayish-cyan);
+    color: var(--light-grayish-cyan-filter-tablets);
+    padding: .45em .6em .22em .55em;
+    border-radius: 15px;
+}
+
+main .all-sections .section .position {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .8em;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+main .all-sections .section .position:hover {
+    color: var(--desaturated-dark-cyan);
+}
+
+main .all-sections .section .new {
+    background-color: var(--dark-grayish-cyan);
+}
+
+main .all-sections .section .line-two {
+    display: flex;
+    font-size: 1.05rem;
+    color: var(--very-dark-grayish-cyan);
+    opacity: .8;
+    gap: 1.5em;
+    margin-bottom: 1em;
+}
+
+main .all-sections .section .line-two .contract::before,
+main .all-sections .section .line-two .contract::after {
+    position: absolute;
+    content: '';
+    background-color: var(--very-dark-grayish-cyan);
+    width: .25em;
+    height: .25em;
+    border-radius: 50%;
+    margin-top: .35em;
+}
+
+main .all-sections .section .line-two .contract::before {
+    margin-left: -.8em;
+}
+
+main .all-sections .section .line-two .contract::after {
+    margin-left: .7em;
+}
+
+main .all-sections .section .border {
+    height: 1px;
+    background-color: var(--very-dark-grayish-cyan);
+    width: 18.6em;
+    margin-bottom: .2em;
+}
+
+main .all-sections .section .box {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.08rem;
+    color: var(--desaturated-dark-cyan);
+    padding: .7em;
+    gap: 1em;
+    margin-left: -.9em;
+    margin-top: .1em;
+}
+
+main .all-sections .section .box>* {
+    background-color: var(--light-grayish-cyan-background);
+    padding: .5em .7em .3em .5em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+main .all-sections .section .box>*:hover {
+    background-color: var(--desaturated-dark-cyan);
+    color: var(--light-grayish-cyan-filter-tablets);
+}
